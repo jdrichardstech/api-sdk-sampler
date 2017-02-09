@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>SDK Sampler</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <span style="float:left;padding-left:10px;font-size:15px;text-decoration:underline;font-weight:200"><a style="color:blue" href="/">Home</a></span>
+    <h1 style="margin:20px 0 15px 0; color:#475e5d; "><img height="48" width="48" align="middle" style="margin:-10px 25px 20px 0; padding:0; 0px 0; border-radius:5px; float:right; vertical-align:middle"  src="../../images/twitter.png" alt="" />Twitter Search</h1>
+    <header style="margin-bottom:35px; height:70px; width:100%; background:#0084b4; ">
+        <h2 class="twitterHeaderTwo"><span style="color:#fff; font-size:.7em;">{{tag}}</span> {{title}}</h2>
+    </header>
+    <div>
+      <form action="/timeline" method="post" class="twitter_search">
+        <input type="text" name="query" placeholder="search" class="form-control" style="margin-bottom:15px" />
+        <select name="type" class="form-control" style="margin-bottom:15px">
+          <option value="search">Search</option>
+          <option value="timeline">Timeline</option>
+        </select>
+        <input type="submit" value="Submit" class="btn btn-info" style="margin-bottom:15px" />
+        <h2><span style="color:red">WARNING:</span> WHEN SELECTING TIMELINE...The server will crash if you enter a username that does not exist </h2>
+      <br />  <a href="http://twittercounter.com/pages/100" target="_blank" style="font-size:1.1em;color:blue">Click here for a list of popular twitter usernames</a>
+      </form>
+      </div>
+  			{{#tweets}}
+  		<div class="venue-box_twitter">
+    	<ul class ="twitterList">
+      <img style="margin:15px 20px 10px 0; float:left; border-radius:5px;" src="{{user.profile_image_url}}" alt="" />
+      <li>{{text}}<br />
+	      <div>
+		      <p style="color:#999999 padding-top:60px;">
+		        <img width="25" height="25" align="middle" style="vertical-align:middle; color:#ced646;"  src="../../images/retweet.png" alt="" />
+		        <span style="padding-right:30px;"> {{retweet_count}}</span>
+		        <img width="17" height="17" align="middle" style="vertical-align:middle"  src="../../images/gray_heart.png" alt="" />
+		        {{favorite_count}}
+		        <span style="float:right; font-size:.9em; margin-right:-60px;">Created At: {{created_at}} by <a style="color:#01affe;" href="http://www.twitter.com/{{user.screen_name}}" target="_blank">@{{user.screen_name}}</a></span>
+		      </p>
+	      <div>
+      </li>
+	  </div>
+	  {{/tweets}}
+  </body>
+</html>

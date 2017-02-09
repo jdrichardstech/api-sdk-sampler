@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+  background:#f1f1f1;
+
+}
+header{
+  display: block;
+  padding:0;
+}
+
+a{
+color:#d32323;
+text-decoration:none
+}
+
+h1{
+  text-align:center;
+
+  padding:0 0 0 10px;
+  font-family:'helvetica',sans-serif;
+  color: #000;
+  font-weight:bold;
+  font-size: 2em;
+
+}
+
+.venue-box_twitter{
+  /*border: 2px solid #ddd;
+  border-radius: 2px;*/
+  display:block;
+  height:120px;
+  width:60%;
+  position: relative;
+  background:#fff;
+  float:right;
+	margin: 0 20px 20px 0;
+  padding:5px;
+  font-family:'helvetica',sans-serif;
+  border-radius: 5px;
+}
+
+.venue-box_yelp{
+  /*border: 2px solid #ddd;
+  border-radius: 2px;*/
+  display:block;
+  height:180px;
+  width:65%;
+  position: relative;
+  background:#fff;
+  margin:15px auto 0 auto;
+  padding:5px 15px 25px 5px;
+  font-family:'helvetica',sans-serif;
+
+}
+
+button{
+  background:#0024B3;
+  border-radius:5px;
+  color: white;
+  height:30px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.7s;
+}
+
+button:hover{
+	background: white;
+	color:black;
+}
+
+ul{
+  padding:0 50px;
+}
+
+li{
+  color:#3b3b3b;
+  font-size:.93em;
+
+  padding: 15px 15px 0 30px;
+  list-style:none;
+  line-height: 25px;
+
+}
+
+.icon{
+  display:block;
+  width:110px;
+  border-radius:10px;
+  /*padding:10px 20px 5px 0;*/
+  float: left;
+  margin:30px;
+
+}
+
+h2.twitterHeaderTwo{
+  padding: 25px 0 0 40px;
+  font-family:'arial', sans-serif;
+  color:#d7e76a;
+  font-size:1.3em;
+  float:left;
+
+}
+
+h2.yelp{
+  font-size:1.5em;
+  font-weight:bold;
+  color:#d32323;
+  padding-top:15px;
+}
+p.address{
+  font-family:'Georgia',serif;
+  color:#a8adad;
+}
+
+p.snippet{
+  font-size:16px;
+  font-style:italic;
+  color:#3b3b3b;
+  padding-top:12px;
+  padding-bottom:4px;
+
+}
+
+
+
+
+.owm_container{
+  border:1px solid black;
+
+}
+
+.owm_search_form{
+display:inline;
+}
+
+.owm_search_form p{
+  font-weight: bold;
+  margin-bottom:10px;
+}
+
+.owm_search_form input{
+  margin-bottom:10px;
+}
+
+.twitter_search{
+	width:20%;
+	float:left;
+	margin-left:30px;
+}
+.yelp_search{
+	width:50%;
+	float:right;
+
+}
+
+}
