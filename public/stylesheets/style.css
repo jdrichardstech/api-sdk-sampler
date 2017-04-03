@@ -73,7 +73,7 @@ h1{
 }
 
 button{
-  background:#2d3247;
+  background:#4B6A78;
   border-radius:5px;
   color: white;
   height:30px;
@@ -83,7 +83,7 @@ button{
 
 button:hover{
 	background: white;
-	color:black;
+	color:#4B6A78;
 }
 
 ul{
