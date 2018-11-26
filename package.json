@@ -18,6 +18,7 @@
     "serve-favicon": "~2.3.0",
     "twitter": "^1.4.0",
     "yelp": "^1.0.1",
+    "yelp-fusion": "^2.0.3",
     "youtube-search": "^1.0.6"
   }
 }
